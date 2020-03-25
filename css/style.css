@@ -1,0 +1,23 @@
+body {
+	font-family: 'Courgette', cursive;
+}
+
+.container_info {
+	background: #c9c1ac;
+}
+
+.primary_color {
+	color: #d3325f;
+}
+
+ .container_info h2 {
+ 	word-spacing: 0.6rem;
+ }
+
+ .container_info a {
+ 	transition: color 1s ease-in-out;
+ }
+
+ .container_info a:hover {
+ 	color:black;
+ }
