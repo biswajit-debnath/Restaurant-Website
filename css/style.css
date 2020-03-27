@@ -230,8 +230,7 @@ body {
  }
 
  .review_img {
-		width: 150px;
-		height: 150px;
+	width: 150px;
  }
 
 
@@ -247,6 +246,58 @@ body {
  	color: black;
  	transform: 	translateY(-5px);
  }
+
+
+
+ /*Contact Section*/
+
+ .height-60 {
+ 	min-height: 60vh;
+ }
+ 
+ #contact .card {
+ 	background: rgba(0,0,0,0.5);
+ 	transition: all 1.5s ease;
+ }
+
+ #contact .card:hover {
+	background: rgba(0,0,0,0.8);
+ }
+
+ #contact .card-header {
+ 	color: #d3325f;
+ }
+
+ #contact .input-group-text {
+ 	background: #d3325f;
+ 	border-color: #d3325f;
+ 	color: #242424;
+ }
+
+ #contact .card .input,
+ #contact .card .input::placeholder {
+ 	color: #606060;
+ }
+
+ .contact_btn {
+ 	color:#d3325f;
+ 	border-color: #d3325f;
+ 	background: transparent;
+ 	transition: all 1s ease-in-out; 
+ }
+
+ .contact_btn:hover {
+	background: #c9c1ac;
+	border-color: #c9c1ac;
+ }
+
+ 
+
+
+
+
+
+
 
 
 
