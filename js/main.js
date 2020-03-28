@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).on('load',function(){
 	console.log("ready");
 	//nav bar toggler btn
 	$('.navbar-toggler').click(function(){
