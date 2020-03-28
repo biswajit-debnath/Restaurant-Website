@@ -1,4 +1,7 @@
 $(window).on('load',function(){
+
+	$('body').show();
+
 	console.log("ready");
 	//nav bar toggler btn
 	$('.navbar-toggler').click(function(){

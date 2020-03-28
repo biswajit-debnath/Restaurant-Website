@@ -1,4 +1,5 @@
 body {
+	display: none;
 	font-family: 'Courgette', cursive;
 	color: #c9c1ac;
 	background:linear-gradient(to bottom,rgba(1,16,21,1),rgba(0,0,0,0.6)),url("../images/body_bg_main.jpg") no-repeat center bottom/cover;
