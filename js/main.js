@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+	console.log("ready");
 	//nav bar toggler btn
 	$('.navbar-toggler').click(function(){
 		$('.navbar-toggler').toggleClass('change')
