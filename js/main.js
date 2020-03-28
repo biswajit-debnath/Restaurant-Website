@@ -1,6 +1,6 @@
-$(window).on('load',function(){
+$(window).on("load", function() {
 
-	$('body').show();
+	$('body').delay(1000).show();
 
 	console.log("ready");
 	//nav bar toggler btn
