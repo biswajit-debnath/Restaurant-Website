@@ -6,9 +6,13 @@ $(document).ready(function(){
 
 	})
 
+
+
+
 	//navbar padd less and making fixed after 718px scrol 	led
 	$(window).scroll(function(){
 		let position = $(this).scrollTop(); //scrolled position i.e number of pixels down 
+		// console.log(position);
 		if(position >= 718) {
 			$('.navbar').addClass('navbar_background');
 			$('.navbar').addClass('fixed-top')
@@ -19,17 +23,51 @@ $(document).ready(function(){
 		}
 	})
 
+
+
+
 	//smooth scroll
-	$('.nav-item a').click(function(link){
+	$('.nav-item a,.down_arrow,.back_to_top').click(function(link){
 		link.preventDefault();
+		let target = $(this).attr('href');
+
+		$('html, body').stop().animate({
+			scrollTop:$(target).offset().top - 15
+		},2000);
 	})
 
 
+
+
+	//back to top
+	$(window).scroll(function(){
+		let position = $(this).scrollTop(); //scrolled position i.e number of pixels down 
+		if(position >= 718) {
+			$('.back_to_top').addClass('scroll_top');
+			if(position > 2845) {
+				$('.back_to_top').addClass('scroll_top_bg');	
+			}
+			else {
+				$('.back_to_top').removeClass('scroll_top_bg');
+			}			
+		}
+
+		else {
+			$('.back_to_top').removeClass('scroll_top');
+		}
+	})
+
+
+
+
 	//water ripples
-	$("#header .container, .container_info").ripples({
+	$(".ripples, .container_info").ripples({
   		dropRadius: 25,
   		perturbance: 0.6,
 	});
+
+
+	
 
 	//magnific popup
 	$('.parent-container').magnificPopup({
